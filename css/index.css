@@ -1,0 +1,147 @@
+body {
+    background-color: hsl(234, 29%, 20%);
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    /* margin-left: 100px; */
+    /* margin-right: 50px; */
+    box-sizing: border-box;
+}
+
+
+.card {
+    box-shadow: 1px 1px 10px 1px black;
+    padding: 0 15px;
+    width: 43%;
+    padding-top: 1%;
+    /* padding-bottom: 5%; */
+    border-radius: 20px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 100%);
+    display: block;
+    height: 380px;
+}
+
+.card h1 {
+    color: #363535;
+    font-family: 'Roboto Serif', serif;
+    font-weight: 700;
+    font-size: 30px;
+    font: bold;
+    line-height: 20px;
+    padding-top: 50px;
+}
+
+.holder {
+    padding: 0px 16px;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.card p {
+    font-size: 9px;
+    /* display: block; */
+    line-height: 15px;
+    font-weight: 400;
+    font: bold;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.card.card-body {
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.image-holder {
+    margin-left: -20px;
+}
+
+.image-holder img {
+    width: 200px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.icon-text1 {
+    display: flex;
+    padding-right: 10px;
+    margin-top: 2px;
+    gap: 10px;
+}
+
+
+
+.icon-text1 h2 {
+    font-size: 9px;
+    margin-top: 8px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.icon-text2 {
+    display: flex;
+    padding-right: 10px;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+
+
+.icon-text2 h2 {
+    font-size: 9px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 8px;
+}
+
+.icon-text3 {
+    display: flex;
+    padding-right: 10px;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+
+
+.icon-text3 h2 {
+    font-size: 9px;
+    margin-top: 8px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font: 700;
+    font-family: 'Roboto Serif', serif;
+    display: block;
+    padding-left: 16px;
+    margin-top: 20px;
+}
+
+form input {
+    border: 1px solid gray;
+    margin-left: 20px;
+    padding: 2px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: .5;
+}

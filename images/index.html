@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>newsletter</title>
+    <link rel="stylesheet" href="/bootstrap5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- card -->
+    <div class="container">
+      <div class="card">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="holder">
+              <h1>Stay updated!</h1>
+              <p>John 60,000+ product managers receiving monthly updates on:</p>
+
+              <div class="icon-text1">
+                <img class="image-fluid" src="/images/icon-list.svg" alt="" />
+                <h2>Product discovery and building what matters</h2>
+              </div>
+              <div class="icon-text2">
+                <img src="/images/icon-list.svg" alt="" />
+                <h2>Measuring to ensure update are a success</h2>
+              </div>
+              <div class="icon-text3">
+                <img src="/images/icon-list.svg" alt="" />
+                <h2>and much more!</h2>
+              </div>
+
+              <!-- form -->
+
+              <form action="">
+                <label for="email">Email address</label>
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="lalechuoneneobari4@gmail.com"
+                />
+
+                <input
+                  onclick="
+            alert(newDiv())  
+                
+                "
+                  style="background-color: hsl(234, 29%, 20%)"
+                  type="text"
+                  name="email"
+                  placeholder="lalechuoneneobari4@gmail.com"
+                />
+              </form>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="image-holder">
+              <img src="/images/illustration-sign-up-desktop.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function newDiv() {
+        body = document.body;
+        // body.append("div");
+        const div = document.createElement("div");
+        body.append(div);
+
+        div.style.backgroundImage = `url('/images/icon-list.svg')`;
+        div.style.backgroundRepeat = "no-repeat";
+        div.style.backgroundPosition = "30px top";
+        div.style.padding = "50px 30px";
+        div.style.backgroundColor = "white";
+        div.style.width = "23%";
+        div.style.margin = "100px";
+        div.style.position = "top";
+        div.style.borderRadius = "25px";
+        div.innerHTML = "Thanks for subscribing!";
+        // creating a new paragraph
+        const p = document.createElement("p");
+        div.append(p);
+        p.innerHTML =
+          " A confirmation email has been sent to lalechuoneneobari4@gmail.com. Please open it and click the button inside to confirm your subscription";
+        div.style.fontSize = "15px";
+        p.style.width = "250px";
+        p.style.fontSize = "15px";
+        p.style.textAlign = "center";
+
+        // creating a new button
+        let button = document.createElement("button");
+        div.append(button);
+        button.innerHTML = "Dismiss message";
+        button.style.backgroundColor = "hsl(234, 29%, 20%)";
+        button.style.color = "white";
+        button.style.padding = "10px 30px";
+        button.style.borderRadius = "25px";
+        button.style.margin = "5px";
+
+        return div;
+      }
+    </script>
+
+    <script src="/bootstrap5/js/bootstrap.min.js"></script>
+  </body>
+</html>
